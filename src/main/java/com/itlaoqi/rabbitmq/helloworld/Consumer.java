@@ -9,6 +9,7 @@ import java.io.IOException;
 
 public class Consumer {
     public static void main(String[] args) throws IOException {
+        System.out.println("更新1");
         Connection conn = RabbitUtils.getConnection();
         //创建通道
         Channel channel = conn.createChannel();
